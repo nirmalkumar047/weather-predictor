@@ -1,0 +1,168 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  font-weight: 400;
+}
+/* Suggestions dropdown style */
+#suggestions {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  width: calc(100% - 40px);
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.suggestion-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.suggestion-item:hover {
+  background: #00f2fe;
+  color: #000;
+}
+
+/* Improved search box */
+.search-box {
+  position: relative;
+}
+
+
+.weather-app {
+  min-height: 100vh;
+  background-image: url(../logo/cloudy.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transition: 500ms;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.datetime {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: auto;
+  padding: 10px 20px;
+  font-size: 3rem;
+  /* transform: scale(2,0); */
+  color: #032f47;
+}
+
+.datetime p {
+  margin: 4px 0;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin: 0%;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 40px;
+}
+
+.search-box input {
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #555;
+  background: transparent;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-box input:focus {
+  border-color: #4facfe;
+}
+
+.search-box button {
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color: #4facfe;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #00c6ff;
+}
+
+/* Suggestions below input */
+.suggestions {
+  margin-top: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: auto;
+  color: #333;
+  display: none;
+}
+
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.suggestions div:hover {
+  background: #f0f0f0;
+}
+
+/* Weather Result */
+.weather-result {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.weather-result p, 
+.weather-result h2, 
+.weather-result h3 {
+  margin: 10px 0;
+}
